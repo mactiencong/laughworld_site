@@ -267,65 +267,20 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/creative.min.js"></script>
-    <script>
-      $(document).ready(function() {
-        $('.youtube').magnificPopup({
-          type: 'iframe',
-          iframe: {
-              patterns: {
-                  youtube: {
-                      index: 'youtube.com/', 
-                      id: function(url) {        
-                          var m = url.match(/[\\?\\&]v=([^\\?\\&]+)/);
-                          if ( !m || !m[1] ) return null;
-                          return m[1];
-                      },
-                      src: 'https://youtube.com/embed/%id%?autoplay=1'
-                  }
-              },
-              srcAction: 'iframe_src'
-          }
-        });
-        $('.ajax-popup-link').magnificPopup({
-          type: 'ajax'
-        });
-      });
-      
-      </script>
-    
-    <script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId            : 'your-app-id',
-      autoLogAppEvents : true,
-      xfbml            : true,
-      version          : 'v2.12'
-    });
-  };
-
-  (function(d, s, id){
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement(s); js.id = id;
-     js.src = "https://connect.facebook.net/en_US/sdk.js";
-     fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
-</script>
-    
     <!-- Load Facebook SDK for JavaScript -->
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
   js = d.createElement(s); js.id = id;
-  js.src = 'https://connect.facebook.net/ja_JP/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&autoLogAppEvents=1';
+  js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&autoLogAppEvents=1';
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 
 <!-- Your customer chat code -->
 <div class="fb-customerchat"
   attribution="setup_tool"
-  page_id="581551962030953">
+  page_id="330194434171082">
 </div>
 
   </body>
